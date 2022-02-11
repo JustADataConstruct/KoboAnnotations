@@ -13,7 +13,7 @@ Pip will read the pyproject file and import the dependencies.
 ### Windows
 Drop your .sqlite file on KoboAnnotations.py
 ### Linux
-Navigate to `src/KoboAnnotations`, paste your KoboReader.sqlite file in this folder, and run `python KoboAnnotation.py KoboReader.sqlite`
+Navigate to `src/KoboAnnotations`, paste your KoboReader.sqlite file in this folder, and run `python KoboAnnotations.py KoboReader.sqlite`
 
 # Note
 This app has only been tested with a Kobo Aura H2O edition 2 with the latest firmware at the time of writing, 4.28.18220. I can't promise
