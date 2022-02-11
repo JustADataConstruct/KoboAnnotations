@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Kobo Annotations</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+
+<body>
+	{% for book, notes in annotations.items() %}
+	<div class="book">
+		<p>
+		<h1>{{book}}</h1>
+		</p>
+	</div>
+	{%for text, note in notes%}
+	<div class="note">
+		<p>{{text}}</p>
+		{%if note != ""%}
+		<div class="annotation">
+			<p>Your annotation: <i>{{note}}</i></p>
+		</div>
+		{%endif%}
+	</div>
+	{%endfor%}
+	{% endfor %}
+</body>
+
+</html>

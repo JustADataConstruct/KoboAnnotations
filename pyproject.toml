@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "KoboAnnotations"
+version = "0.1.0"
+description = "Parse annotations from a kobo.sqlite file and show them in a HTML file"
+authors = ["JustADataConstruct"]
+packages = [
+	{include = "KoboAnnotations",from="src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Jinja2 = "^3.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+flake8 = "^4.0.1" #Linter
+pip-audit = "^1.1.2" #Check if packages have vulnerabilities.
+poethepoet = "^0.12.3" #Task runner with script support
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+test_poe = {cmd="echo Poe installed correctly.",help="Test task."}
+run = {cmd="poetry run python src/KoboAnnotations/KoboAnnotations.py",help="Runs default file."}
+

@@ -1,0 +1,19 @@
+body {
+	background-color:#FFF0C9;
+	text-align:center;
+	width:75%;
+	margin:auto;
+	border-style:solid;
+}
+.book {
+	border-style:outset;
+}
+.note {
+	border-style:inset;
+}
+.annotation {
+	text-align:left;
+	margin:auto;
+}
+			
+			
