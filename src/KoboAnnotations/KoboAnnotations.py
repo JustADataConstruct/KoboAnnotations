@@ -21,7 +21,7 @@ def main():
         else:
             books[title] = [(text, note)]
     output = jinja2.Environment(loader=jinja2.FileSystemLoader("./")).get_template('template.html').render(annotations=books)
-    with open('output.html', 'w') as f:
+    with open('output.html', 'w', encoding="utf-8") as f:
         f.write(output)
     print("Ready! Your annotations have been exported as output.html")
     conn.close()
